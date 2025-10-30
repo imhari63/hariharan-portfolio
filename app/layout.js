@@ -16,6 +16,9 @@ export const metadata = {
   icons: {
   icon: "/favicon.png",
   },
+  others: {
+    "google-site-verification": "googleeb944f3f34964655.html",
+  },
 };
 
 export default function RootLayout({ children }) {
