@@ -10,16 +10,28 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Hariharan - Software Developer",
-  description:
-    "This is the portfolio of Hariharan. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
-  icons: {
-  icon: "/favicon.png",
+  title: {
+    default: "Hariharan R – Software Developer",
+    template: "%s | Hariharan R",
   },
-  others: {
-    "google-site-verification": "googleeb944f3f34964655.html",
+  description:
+    "Hariharan R is a software developer and full-stack engineer. Explore projects, skills, and experience.",
+  applicationName: "Hariharan R",
+  metadataBase: new URL("https://yourdomain.com"), // change if you have domain
+  icons: {
+    icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "Hariharan R – Software Developer",
+    description: "Software Developer & Full-Stack Engineer",
+    siteName: "Hariharan R",
+    type: "website",
+  },
+  verification: {
+    google: "googleeb944f3f34964655",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
